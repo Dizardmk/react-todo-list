@@ -1,0 +1,57 @@
+@import 'styles/shared';
+
+.header {
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation {
+  &__list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    font-weight: 700;
+    @include font(18px, 21px);
+    color: $text-accent-color;
+    cursor: pointer;
+  }
+  &__item:not(:last-child) {
+    margin-right: 64px;
+  }
+}
+
+.authNav {
+  &__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-weight: 700;
+    @include font(18px, 21px);
+    text-transform: uppercase;
+    color: $text-accent-color;
+    min-width: 183px;
+    height: 48px;
+    border: 1px solid $text-accent-color;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
