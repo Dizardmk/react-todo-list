@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
   }
 }
 
@@ -24,14 +23,20 @@
     justify-content: center;
   }
 
+  &__itemWrapper:not(:last-child) {
+    margin-right: 64px;
+  }
+
   &__item {
+    @extend %link;
     font-weight: 700;
     @include font(18px, 21px);
     color: $text-accent-color;
     cursor: pointer;
   }
-  &__item:not(:last-child) {
-    margin-right: 64px;
+
+  &__item--active {
+    color: $active-link-color;
   }
 }
 

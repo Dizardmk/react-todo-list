@@ -1,3 +1,5 @@
+import Todo from '../components/Todo';
+
 export default function TodoPage() {
-  return <div>todopage</div>;
+  return <Todo />;
 }
