@@ -1,8 +1,24 @@
+@import './mixins';
+
 %list {
   list-style: none;
 }
 %link {
   text-decoration: none;
 }
+
+%button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  @include font(18px, 21px);
+  text-transform: uppercase;
+  min-width: 183px;
+  height: 48px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 // в файл подключить @import 'styles/shared';
 // в коде вставлять так: @extend %list;

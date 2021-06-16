@@ -1,0 +1,28 @@
+@import 'styles/shared';
+
+.hero {
+  &__leftSide {
+    background: url(./images/splash1.svg) no-repeat 20px 32px,
+      url(./images/splash2.svg) no-repeat -15px -17px;
+    height: 658px;
+  }
+  &__title {
+    width: 340px;
+    font-weight: 500;
+    @include font(72px, 84px);
+    color: $hero-title-color;
+    padding-top: 165px;
+    margin: 0 0 62px 88px;
+  }
+  &__button {
+    @extend %button;
+    color: #fff;
+    border: 1px solid $hero-button-color;
+    background-color: $hero-button-color;
+    margin-left: 120px;
+  }
+  &__rightSide {
+    background: url(./images/splash-image.svg) no-repeat 20px 32px;
+    height: 658px;
+  }
+}
