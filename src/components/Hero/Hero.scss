@@ -1,10 +1,12 @@
 @import 'styles/shared';
 
 .hero {
+  // display: flex;
   &__leftSide {
     background: url(./images/splash1.svg) no-repeat 20px 32px,
       url(./images/splash2.svg) no-repeat -15px -17px;
     height: 658px;
+    width: 727px;
   }
   &__title {
     width: 340px;
@@ -22,7 +24,13 @@
     margin-left: 120px;
   }
   &__rightSide {
-    background: url(./images/splash-image.svg) no-repeat 20px 32px;
-    height: 658px;
+    background: url(./images/rightSide2.png) no-repeat -15px -100px;
+    height: 662px;
+    width: 727px;
   }
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
 }
