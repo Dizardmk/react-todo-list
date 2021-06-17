@@ -1,0 +1,31 @@
+@import 'styles/shared';
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $modal-backdrop-color;
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 625px;
+  height: 533px;
+  padding: 10px;
+  background-color: $modal-bg-color;
+  border-radius: 50px;
+}
+
+.modal__closeButton {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

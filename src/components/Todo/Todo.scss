@@ -4,15 +4,19 @@
   background-color: $todo-bg-color;
   padding: 32px 0;
 
-  // .container {
-  // }
   &__list {
     @extend %list;
   }
   &__item {
-    background: rgba(178, 114, 217, 0.75);
     border-radius: 32px 32px 8px 8px;
     padding: 16px;
+    margin-bottom: 32px;
+  }
+  &__item:nth-child(odd) {
+    background-color: $todo-main-item-bg-color;
+  }
+  &__item:nth-child(even) {
+    background-color: $todo-second-item-bg-color;
   }
   &__info {
     display: flex;
@@ -72,15 +76,28 @@
       background-color: $todo-button-edit-color;
     }
   }
-  // &__deadline {
-  // }
+  &__deadline {
+    font-weight: 400;
+    @include font(12px, 14px);
+  }
+  &__deadlineTitle {
+    color: #ffffff;
+    margin-right: 8px;
+  }
+  &__deadlineTime {
+    color: $text-accent-color;
+    margin-right: 8px;
+  }
+  &__deadlineDate {
+    color: $text-accent-color;
+  }
 }
 
 .todoBlocks {
   @extend %list;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   &__item {
     width: 340px;
@@ -109,6 +126,22 @@
     align-items: center;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+  }
+  &_addTodoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__addTodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    background: $text-accent-color;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
   }
 }

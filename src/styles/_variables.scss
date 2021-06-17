@@ -1,11 +1,19 @@
 $primary-font: 'Roboto', sans-serif;
 $text-accent-color: #4a1f83;
 $active-link-color: #d858e3;
-//
+
+// hero
 $hero-title-color: #301a3c;
 $hero-button-color: #d858e3;
-//
+
+// todo
 $todo-bg-color: rgba(182, 234, 229, 0.5);
+$todo-main-item-bg-color: rgba(178, 114, 217, 0.75);
+$todo-second-item-bg-color: rgba(88, 227, 215, 0.75);
 $todo-button-complete-color: #9ad972;
 $todo-button-delete-color: #d97e72;
 $todo-button-edit-color: #d9bc72;
+
+// modal
+$modal-bg-color: #4a1f83;
+$modal-backdrop-color: rgba(120, 120, 120, 0.75);
