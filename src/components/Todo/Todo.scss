@@ -75,6 +75,10 @@
     &.edit {
       background-color: $todo-button-edit-color;
     }
+    &.disabled {
+      background-color: transparent;
+      border: 1px solid white;
+    }
   }
   &__deadline {
     font-weight: 400;
@@ -127,11 +131,6 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-  }
-  &_addTodoWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   &__addTodo {
     display: flex;

@@ -31,14 +31,17 @@ export default function AddTodoForm() {
 
       <label>
         <span className="addTodoForm__title">Period</span>
-        <input
-          className="addTodoForm__input"
-          required
+        <select
+          className="addTodoForm__input select"
           type="text"
           name="period"
           value={todo.period}
           onChange={handleChange}
-        />
+        >
+          <option selected>Today</option>
+          <option>Daily</option>
+          <option>Weekly</option>
+        </select>
       </label>
 
       <label>

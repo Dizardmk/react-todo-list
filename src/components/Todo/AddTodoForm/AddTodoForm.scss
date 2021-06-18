@@ -1,39 +1,52 @@
-// @import 'styles/shared';
+@import 'styles/shared';
 
-// .addTodoForm {
-//   display: flex;
-//   flex-direction: column;
-//   width: 300px;
-//   border: 1px solid red;
-//   border-radius: 4px;
-//   padding: 15px;
+.addTodoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-//   &__title {
-//     display: block;
-//   }
+  &__title {
+    display: block;
+    font-weight: 700;
+    @include font(18px, 21px);
+    color: #ffffff;
+    margin: 0 0 9px 25px;
+  }
 
-//   &__input {
-//     width: 268px;
-//     border: 1px solid red;
-//     border-radius: 4px;
-//     padding: 5px;
-//     margin: 5px 0 15px 0;
+  &__input {
+    width: 458px;
+    height: 65px;
+    background: $modal-input-bg-color;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    padding: 0 25px;
+    margin-bottom: 32px;
 
-//     &:focus {
-//       outline-color: yellow;
-//     }
-//   }
+    &:focus {
+      border: 2px solid $modal-input-overflow-color;
+    }
 
-//   &__button {
-//     cursor: pointer;
-//     color: #fff;
-//     background-color: yellow;
-//     border: 1px solid yellow;
-//     border-radius: 4px;
-//     padding: 5px;
+    &.select {
+      padding: 20px;
+    }
+  }
 
-//     &:active {
-//       background-color: orange;
-//     }
-//   }
-// }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 183px;
+    height: 48px;
+    background: $modal-button-color;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    font-weight: 700;
+    @include font(18px, 21px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

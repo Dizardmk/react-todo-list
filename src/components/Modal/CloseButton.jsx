@@ -1,4 +1,4 @@
-import { ReactComponent as CloseModalIcon } from '../Todo/images/delete.svg';
+import { ReactComponent as CloseModalIcon } from '../Todo/images/close.svg';
 import './Modal.scss';
 
 const CloseButton = ({ onClose }) => {
